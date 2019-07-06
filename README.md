@@ -2,7 +2,6 @@
 If one of your staff members (inadvertently | mischievously) modifies your VPC security group to allow SSH access to the world,
 you want the change to be automatically reverted and then receive a notification that the change to the security group was automatically reverted.
 
-#### Follow this article in [Youtube](https://www.youtube.com/watch?v=yLO27moAbZI&list=PLxzKY3wu0_FKok5gI1v4g4S-g-PLaW9YD&index=4&t=0s)
 
 ## Automatically Revert and Receive Notifications About Changes to Your Amazon VPC Security Groups
 
@@ -14,7 +13,7 @@ Here is how the process works,
    1. _**Optionally**_: Sends you an SNS Notification email to let you know what the change was, who made it, and that the change was reverted
 
 
-![Fig : Valaxy-Serverless-Security-Group-Sentry](https://raw.githubusercontent.com/miztiik/serverless-sg-sentry/master/images/Valaxy-Serverless-Security-Group-Sentry.png)
+![Fig : Serverless-Security-Group-Sentry](https://raw.githubusercontent.com/vamsikrishna2421/Serverless-SecurityGroup-Sentry/master/images/Serverless-Security-Group-Sentry.png)
 
 ## Pre-Requisities
 We will need the following pre-requisites to successfully complete this activity,
@@ -35,10 +34,10 @@ import os, json, boto3
 
 # Set the global variables
 globalVars  = {}
-globalVars['Owner']                 = "Miztiik"
+globalVars['Owner']                 = "Lekkala"
 globalVars['Environment']           = "Test"
 globalVars['REGION_NAME']           = "ap-south-1"
-globalVars['tagName']               = "Valaxy-Serverless-Security-Group-Sentry"
+globalVars['tagName']               = "Serverless-Security-Group-Sentry"
 
 globalVars['security_group_id']     = os.environ['security_group_id']
 
